@@ -1,0 +1,13 @@
+# springboot框架
+## 使用说明
+### 前置配置
+- src/main/java/com/taylor/springboot/config/CodeGenerator的第14至18行按照本地数据库配置进行更改
+- src/main/java/com/taylor/springboot/config/CodeGenerator的第20行改为项目的java代码路径
+- src/main/java/com/taylor/springboot/config/CodeGenerator的第22行改为项目的代码包路径（通常为com.example.demo）
+- src/main/java/com/taylor/springboot/config/MybatisPlusConfig的第9行改为代码包下的mapper路径（通常为com.example.demo.mapper）
+- src/main/java/com/taylor/springboot/Ge的第17行，函数内的“false”参数后接需要自动生成表的表名（例如：gse.generateByTables(false,"user","reply");）
+- src/resources/appllication.yml的9~12行改为本地数据库配置
+- src/resources/appllication.yml的53~55行依照项目路径进行修改
+### 自动生成
+ - 执行src/main/java/com/taylor/springboot/Ge中的main函数
+ - 如果上条自动生成报错，优先检查数据库驱动包版本
